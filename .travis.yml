@@ -1,6 +1,8 @@
 language: android
 
 env:
+  global:
+    - GRADLE_OPTS="-Xmx512m -XX:MaxPermSize=512m"
   matrix:
     - ANDROID_TARGET=android-25  ANDROID_ABI=armeabi-v7a
 
